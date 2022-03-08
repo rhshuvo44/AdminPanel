@@ -71,7 +71,33 @@
           </li>
         </ul>
       </div>
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search hero" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+          </div>
+          <div class="user">
+            
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- bootstrap js  -->
+    <script>
+      let = document.querySelectorAll(".navigation li");
+      function activeLink() {
+        list.forEach((element) => element.classList.remove("hoverd"));
+        this.classList.add("hovered");
+      }
+      list.forEach((element) =>
+        element.addEventListener("mouseover", activeLink)
+      );
+    </script>
   </body>
 </html>
