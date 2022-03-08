@@ -42,7 +42,8 @@ body {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-.navigation ul li:hover {
+.navigation ul li:hover,
+.navigation ul li.hovered {
   background-color: var(--white);
 }
 .navigation ul li:nth-child(1) {
@@ -80,7 +81,8 @@ body {
   text-align: start;
   white-space: nowrap;
 }
-.navigation ul li:hover a::before {
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before {
   content: "";
   position: absolute;
   right: 0;
@@ -92,7 +94,8 @@ body {
   box-shadow: 35px 35px 0 10px var(--white);
   pointer-events: none;
 }
-.navigation ul li:hover a::after {
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
   content: "";
   position: absolute;
   right: 0;
